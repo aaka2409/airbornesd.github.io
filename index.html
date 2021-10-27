@@ -1,69 +1,37 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Personal blog</title>
-
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="icon" href="favicon.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <script src="./index.js"></script>
+    <title>Tic-Tac-Toe:- By Aakash</title>
 </head>
-
-<body>
-
-  <div class="navbar">
-    <nav>
-    <div class="handle">
-      <ul id="menuItems">
-        <li><a href="#instagram" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-        <li><a href="#facebook" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-        <li><a href="#youtube"  target="_blank" rel="noopener noreferrer">YouTube</a></li>
-        <li><a href="#twitter" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-      </ul>
-    </div>
-    </nav>
-  </div>
-        
-  <div class="home-page">
-
-    <img class="homepage-image" src="image.png" alt="">
-
-    <h1>
-      S.D's Work-flow
-    </h1>
-
-    <div class="slogan">
-      Coding Life‍
-    </div>
-
-    <hr>
-    <div class="table">
-      <ul>
-
-        <li class="content">
-          <a href="./blog.html" id="blog">Blog</a>
-        </li>
-
-        <li> <span>|</span> </li>
-
-        <li class="content">
-          <a href="./project/index.html">Project</a>
-        </li>
-
-        <li> <span>|</span> </li>
-
-        <li class="content">
-          <a href="./about.html">About</a>
-        </li>
-
-      </ul>
-    </div>
-
-  </div>
-
+<body bgcolor="black">
+    <main class="background">
+        <section class="title">
+            <h1>Tic Tac Toe</h1>
+        </section>
+        <section class="display">
+            Player <span class="display-player playerX">X</span>'s turn
+        </section>
+        <section class="container">
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </section>
+        <section class="display announcer hide"></section>
+        <section class="controls">
+            <button id="reset">Reset</button>
+        </section>
+    </main>
 </body>
-
 </html>
